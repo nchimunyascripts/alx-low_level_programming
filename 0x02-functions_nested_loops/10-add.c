@@ -2,7 +2,9 @@
 
 /**
  * add - adds two integers
- * Returns the result (Sum)
+ * @i: firts integer
+ * @j: second integer
+ * Return: addtion of i and j (Sum)
  */
 
 int add(int i, int j)
