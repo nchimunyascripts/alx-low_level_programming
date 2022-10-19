@@ -5,7 +5,7 @@
  * @n: the number of the time table
  */
 
-void print_time_table(int n)
+void print_times_table(int n)
 {
 	int i, j, k;
 
