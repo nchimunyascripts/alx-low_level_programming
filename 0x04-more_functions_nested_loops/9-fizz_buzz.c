@@ -12,11 +12,11 @@ int main(void)
 	int i;
 
 	if ((i % 3) == 0 && (i % 5) != 0)
-		print(" Fizz");
+		printf(" Fizz");
 	else if ((i % 5) == 0 && (i % 3) != 0)
 		printf(" Buzz");
 	else if ((i % 3) == 0 && (i % 5) == 0)
-		prinft(" FizzBuzz");
+		printf(" FizzBuzz");
 	else if (i == 1)
 		printf("%i", i);
 	else
