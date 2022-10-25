@@ -5,7 +5,7 @@
  * @a: pointer on
  * @b: pointer two
  */
- 
+
 void swap_int(int *a, int *b)
 {
 	int tmp = *a;
