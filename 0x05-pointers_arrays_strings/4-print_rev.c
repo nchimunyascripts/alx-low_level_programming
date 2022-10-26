@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * print_rev - prints strings in reverse order
+ * puts2 - check the code
  * @s: variable
  */
 
