@@ -20,7 +20,7 @@ int compare(int n, int y)
 	return (compare(n, y + 1));
 }
 /**
- * _sqrt_recursive - finds a square root of a number
+ * _sqrt_recursion - finds a square root of a number
  * @n: number
  * Return: the natural square root
  */
