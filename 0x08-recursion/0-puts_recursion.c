@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _put_recursion - prints recursively
+ * _puts_recursion - prints recursively
  * @s: String variable
  * Returns: void
  */
 
-void _put_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	if (*s != '\0')
 	{

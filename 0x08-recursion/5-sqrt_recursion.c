@@ -25,7 +25,7 @@ int compare(int n, int y)
  * Return: the natural square root
  */
 
-int _sqrt_recursive(int n)
+int _sqrt_recursion(int n)
 {
 	return (compare(n, 1));
 }
