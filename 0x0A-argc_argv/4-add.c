@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int n, digits, sum = 0;
 
-	for (n = 1`; n < argc; n++)
+	for (n = 1; n < argc; n++)
 	{
 		for (digits = 0; argv[n][digits]; digits++)
 		{
