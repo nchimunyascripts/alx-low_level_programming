@@ -28,12 +28,12 @@ int main(int argc, char *argv[])
 		coins++;
 		if ((cents - 25) >= 0)
 		{
-			coins -= 25;
+			cents -= 25;
 			continue;
 		}
 		if ((cents - 10) >= 0)
 		{
-			coins -= 10;
+			cents -= 10;
 			continue;
 		}
 		if ((cents - 5) >= 0)
