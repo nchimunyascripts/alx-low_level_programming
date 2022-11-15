@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include "dog.h"
-#include <stddef.h>
 
 /**
  * init_dog - a function that initialize a Structure
- * @d : our Structure@name : the name we are going to attribute
+ * @d : our Structure
  * @age : the age we are going to attribute
  * @name: variable
  * @owner : the owner name we are going to attribute
