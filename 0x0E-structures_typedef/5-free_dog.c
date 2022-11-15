@@ -3,7 +3,7 @@
 
 /**
  * free_dog - free dogs
- *
+ * Return: void
  */
 
 void free_dog(dog_t *d)
