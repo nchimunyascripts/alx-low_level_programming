@@ -3,67 +3,51 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - return a pointer to a newly allocated space in memory
- * which contains a copy of the string given as a parameter.
- * @str: string
- * Return: 0
+ * new_dog - create new dog
+ *@name:char
+ *@age:float
+ *@owner: char
+ * Return: new dog
  */
-
-char *_strdup(char *str)
-{
-	int i = 0, size = 0;
-	char *m;
-
-	if (str == NULL)
-		return (NULL);
-
-	for (; str[size] != '\0'; size++)
-		m = malloc(size * sizeof(*str) + 1);
-
-	if (m == 0)
-		return (NULL);
-
-	for (; i < size; i++)
-		m[i] = str[i];
-
-
-	return (m);
-}
-
-/**
- * *new_dog 0 create a new dog
- * @name: string for name
- * @age: interger for age
- * @owner: string for owner
- * Return: a dog or NULL
- */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *mydog;
-	mydog = malloc(sizeof(struct dog));
 
-	if (mydog == NULL)
+	char *name2;
+	char *owner2;
+	int n, o, i, j;
+	struct dog *luna;
+
+	luna = malloc(sizeof(struct dog));
+	if (luna == NULL)
 		return (NULL);
-
-	mydog->name = _strdup(name);
-
-	if (mydog->name == NULL)
+	for (n = 0; *(name + n) != '\0'; n++)
+		;
+	for (o = 0; *(owner + o) != '\0'; o++)
+		;
+	name2 = malloc(n + 1);
+	if (name2 != NULL)
 	{
-		free(mydog);
+		for (i = 0; i <= n; i++)
+			*(name2 + i) = *(name + i);
+	} else
+	{
+		free(luna);
 		return (NULL);
 	}
-
-	mydog->owner = _strdup(owner);
-
-	if (mydog->owner == NULL)
+	owner2 = malloc(o + 1);
+	if (owner2 != NULL)
 	{
-		free(mydog->name);
-		free(mydog);
+		for (j = 0; j <= o; j++)
+			*(owner2 + j) = *(owner + j);
+	} else
+	{
+		free(name2);
+		free(luna);
 		return (NULL);
 	}
+	luna->name = name2;
+	luna->age = age;
+	luna->owner = owner2;
+	return (luna);
 
-	mydog->age = age;
-
-	return (mydog);
 }
